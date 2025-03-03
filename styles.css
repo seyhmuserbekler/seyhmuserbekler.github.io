@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #0088cc, #005f99); /* Deniz mavisi tonu */
+    background: linear-gradient(135deg, #6a9fb5, #4a7683); /* Daha yumuşak mavi tonları */
     color: white;
     padding: 50px 20px;
 }
@@ -17,7 +17,7 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
-    background: #ff8c00; /* Turuncu */
+    background: #f0a500; /* Daha pastel tonlarında turuncu */
     margin: 0;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #e07b00;
+    background: #d47b00; /* Daha yumuşak bir ton */
     border-radius: 5px;
 }
 
