@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
+     
+    <script>
+        gsap.from(".anim-title", { duration: 1, y: -50, opacity: 0, ease: "power2.out" });
+        gsap.from(".anim-subtitle", { duration: 1, delay: 0.5, y: 50, opacity: 0, ease: "power2.out" });
+    </script>
 <body>
     <header>
         <h1 class="anim-title">Merhaba, ben Şeyhmus!</h1>
@@ -41,11 +46,7 @@
         <h2>İletişim</h2>
         <p>Buraya iletişim bilgilerini ekleyebilirsin.</p>
     </section>
-    
-    <script>
-        gsap.from(".anim-title", { duration: 1, y: -50, opacity: 0, ease: "power2.out" });
-        gsap.from(".anim-subtitle", { duration: 1, delay: 0.5, y: 50, opacity: 0, ease: "power2.out" });
-    </script>
+   
 </body>
 </html>
 
