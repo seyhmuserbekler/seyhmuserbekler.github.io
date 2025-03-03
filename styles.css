@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #0088cc, #005f99); /* Deniz mavisi tonu */
     color: white;
     padding: 50px 20px;
 }
@@ -17,7 +17,7 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
-    background: #333;
+    background: #ff8c00; /* Turuncu */
     margin: 0;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #575757;
+    background: #e07b00;
     border-radius: 5px;
 }
 
@@ -54,4 +54,3 @@ p {
     margin: auto;
     line-height: 1.6;
 }
-
