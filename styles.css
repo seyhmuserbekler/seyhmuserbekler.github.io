@@ -1,1 +1,57 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 50px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 50px 20px;
+}
+
+h2 {
+    color: #444;
+}
+
+p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
 
