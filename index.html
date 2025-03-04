@@ -5,16 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Şeyhmus | Kişisel Web Sitesi</title>
     <link rel="stylesheet" href="styles.css">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 5px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        .menu-toggle {
+            display: none;
+            background: #444;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+            nav ul li {
+                width: 100%;
+            }
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
 </head>
-  
 <body>
     <header>
         <h1 class="anim-title">Merhaba, ben Şeyhmus!</h1>
         <p class="anim-subtitle">Yazılım Mühendisi & Web Geliştirici</p>
     </header>
     
+    <button class="menu-toggle">Menüyü Aç</button>
     <nav>
         <ul>
             <li><a href="https://seyhmuserbekler.github.io/">Anasayfa</a></li>
@@ -28,79 +80,14 @@
     
     <section id="hakkimda" class="section">
         <h2 style="text-decoration: underline;">Hakkımda</h2>
-        <p>Merhabalar,daha çok üzerine çalıştığım Web tabanlı muhasebe yazılımları ,Cms uygulamaların yer aldığı kurumsal yazılım geliştirme süreçleri konusunda yazılımlar geliştirmeyi seviyorum. Şuan için Asp.net MCV5 ile yazılımlar geliştiriyorum. GitHub hesabımda bir iki küçük örnek proje paylaşmışım dilerseniz inceleyebilirsiniz .
-    
-            Sevgiyle kalın...<br>
-              <a href="https://github.com/seyhmuserbekler" target="_blank">Github için tıklayınız</a>
-        
-        </p>
-    </section>
-    
-    <section id="projelerim" class="section">
-        <h2 style="text-decoration: underline;">Eğitim Hayatım</h2>
-        <p>
-Şanlıurfa Özel Birikim Lisesi
-Fen-Matematik Bölümü <br>
-Matematik-Fen Sayısal<br>
-Eylül 2006- Haziran 2010 <br><br><br>
-            
-Fırat Üniversitesi
-Teknoloji Fakültesi
-Yazılım Mühendisliği <br>
-Eylül 2010-Haziran 2014  
-            
-</p>
-    </section>
-    
-    <section id="blog" class="section">
-        <h2 style="text-decoration: underline;">Yeteneklerim</h2>
-        <p>
-Programlama Dilleri & Araçlar  <br>
-           
-
-C# Dili <br>
-Asp.Net <br>
-Asp.Net Core <br>
-MVC <br>
-SQL Server <br>
-Oracle</p>
+        <p>Merhaba, ben Şeyhmus...</p>
     </section>
 
-
-    <section id="deneyimlerim" class="section">
-        <h2 style="text-decoration: underline;">Deneyimlerim</h2>
-        <p>
-<h4>Mardin Artuklu Üniversitesi</h4> 
-<b> Yazılımcı </b> <br>
-Bilgi İşlem Daire Başkanlığı - Yazılım Mühendisi <br>            
-Ocak 2025-Hala Devam <br><br><br>
-            
-<h4>Muş Alparslan Üniversitesi</h4> 
-<b> Yazılımcı </b> <br>
-Bilgi İşlem Daire Başkanlığı - Yazılım Mühendisi <br>            
-Ocak 2023-Ocak 2025 <br><br><br>
-            
-<h4> Ronya Bilişim & Yazılım </h4>
-<b> Yazılımcı </b> <br>
-Grafik Tasarım - Web Geliştirme-Reklam <br>     
-Eylül 2019-Ocak 2023 <br><br><br>
-            
-<h4>  Uğur Koleji </h4>
-<b> Eğitmen </b> <br><br>
-
-Eylül 2018-Haziran 2019
-     </p>
-    </section>
-    
-    
-    <section id="iletisim" class="section">
-        <h2 style="text-decoration: underline;">İletişim</h2>
-        <p>seyhmuserbekler@artuklu.edu.tr  <br>
-            seyhmuserbekler@gmail.com
-        </p>
-    </section>
-   <script src="script.js"></script>
-
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            let menu = document.querySelector("nav ul");
+            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        });
+    </script>
 </body>
 </html>
-
