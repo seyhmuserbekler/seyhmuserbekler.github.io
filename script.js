@@ -14,3 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+function showSection(sectionId) {
+    document.querySelectorAll('.section').forEach(section => {
+        section.style.display = 'none';
+    });
+    document.getElementById(sectionId).style.display = 'block';
+}
+
+// Sayfa yüklendiğinde sadece anasayfa görünsün
+document.addEventListener("DOMContentLoaded", function () {
+    showSection('anasayfa');
+});
