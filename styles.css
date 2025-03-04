@@ -86,3 +86,11 @@ nav ul li a {
      color: green;
 }
 
+h2 {
+    color: red; /* H2 başlıklarını kırmızı yap */
+}
+
+h4 {
+    color: green; /* H4 başlıklarını yeşil yap */
+}
+
