@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Mobil ve masaüstü için animasyon ekleyelim
+    // Ana sayfa için animasyon fonksiyonu
     function animateHomepage() {
         gsap.from("#anasayfa p", { 
             x: -100,  
@@ -37,27 +37,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Tarayıcı yüklendiğinde veya yeniden boyutlandırıldığında çalıştır
-    function checkScreenSize() {
-        if (window.innerWidth <= 768) {
-            setTimeout(animateHomepage, 500); // Mobilde bazen geç yüklenme olabiliyor
-        } else {
-            animateHomepage();
-        }
+    // **Intersection Observer ile anasayfa her göründüğünde animasyon çalışacak**
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateHomepage();
+            }
+        });
+    }, { threshold: 0.5 });
+
+    observer.observe(document.querySelector("#anasayfa"));
+    
+    function showSection(sectionId) {
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.display = 'none';
+        });
+        document.getElementById(sectionId).style.display = 'block';
     }
 
-    window.addEventListener("resize", checkScreenSize);
-    checkScreenSize();
-});
-
-function showSection(sectionId) {
-    document.querySelectorAll('.section').forEach(section => {
-        section.style.display = 'none';
-    });
-    document.getElementById(sectionId).style.display = 'block';
-}
-
-// Sayfa yüklendiğinde sadece anasayfa görünsün
-document.addEventListener("DOMContentLoaded", function () {
+    // Sayfa yüklendiğinde sadece anasayfa görünsün
     showSection('anasayfa');
 });
