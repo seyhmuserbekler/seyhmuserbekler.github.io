@@ -73,3 +73,16 @@ nav ul li a {
 .section.active {
     display: block;
 }
+
+#anasayfa h1 {
+    font-size: 48px; /* Başlığı büyük yap */
+    font-weight: bold;
+    color: #222;
+}
+
+#anasayfa p {
+    font-size: 24px; /* Yazıları daha büyük yap */
+    font-weight: 500;
+    color: #444;
+}
+
