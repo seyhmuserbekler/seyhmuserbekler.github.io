@@ -26,29 +26,50 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // **Sonsuz döngü ile sürekli hareket eden yazılar**
     function animateHomepage() {
-        gsap.to("#anasayfa p", { 
+        gsap.from("#anasayfa p", { 
             x: -100,  
-            opacity: 0.2, 
-            duration: 2, 
-            stagger: 1,  
-            ease: "power2.inOut",
-            repeat: -1,   // **Sonsuz tekrar**
-            yoyo: true,   // **Geri dönme efekti**
-            repeatDelay: 1 // **Tekrarlar arasında bekleme süresi**
+            opacity: 0, 
+            duration: 1, 
+            stagger: 0.5, 
+            ease: "power2.out"
         });
     }
 
-    animateHomepage();  // **Animasyonu başlat**
-    
-    function showSection(sectionId) {
-        document.querySelectorAll('.section').forEach(section => {
-            section.style.display = 'none';
-        });
-        document.getElementById(sectionId).style.display = 'block';
+    function checkScreenSize() {
+        if (window.innerWidth <= 768) {
+            setTimeout(animateHomepage, 500);
+        } else {
+            animateHomepage();
+        }
     }
 
-    // Sayfa yüklendiğinde sadece anasayfa görünsün
+    window.addEventListener("resize", checkScreenSize);
+    checkScreenSize();
+});
+
+// Sayfa yüklendiğinde sadece anasayfa görünsün
+function showSection(sectionId) {
+    document.querySelectorAll('.section').forEach(section => {
+        section.style.display = 'none';
+    });
+
+    const activeSection = document.getElementById(sectionId);
+    if (activeSection) {
+        activeSection.style.display = 'block';
+        gsap.from(activeSection, { opacity: 0, duration: 0.5, ease: "power2.out" });
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
     showSection('anasayfa');
+
+    // Menü linklerine tıklanınca ilgili bölümü aç
+    document.querySelectorAll("nav ul li a").forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const sectionId = this.getAttribute("onclick").match(/'([^']+)'/)[1];
+            showSection(sectionId);
+        });
+    });
 });
