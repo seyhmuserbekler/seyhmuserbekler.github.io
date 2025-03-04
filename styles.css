@@ -75,13 +75,13 @@ nav ul li a {
 }
 
 #anasayfa h1 {
-    font-size: 72px; /* Başlığı büyük yap */
+    font-size: 50px; /* Başlığı büyük yap */
     font-weight: bold;
     color: #222;
 }
 
 #anasayfa p {
-    font-size: 48px; /* Yazıları daha büyük yap */
+    font-size: 27px; /* Yazıları daha büyük yap */
     font-weight: 500;
     color: #444;
 }
