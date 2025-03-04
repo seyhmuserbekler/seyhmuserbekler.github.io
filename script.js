@@ -26,27 +26,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Ana sayfa için animasyon fonksiyonu
+    // **Sonsuz döngü ile sürekli hareket eden yazılar**
     function animateHomepage() {
-        gsap.from("#anasayfa p", { 
+        gsap.to("#anasayfa p", { 
             x: -100,  
-            opacity: 0, 
-            duration: 1, 
-            stagger: 0.5, 
-            ease: "power2.out"
+            opacity: 0.2, 
+            duration: 2, 
+            stagger: 1,  
+            ease: "power2.inOut",
+            repeat: -1,   // **Sonsuz tekrar**
+            yoyo: true,   // **Geri dönme efekti**
+            repeatDelay: 1 // **Tekrarlar arasında bekleme süresi**
         });
     }
 
-    // **Intersection Observer ile anasayfa her göründüğünde animasyon çalışacak**
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateHomepage();
-            }
-        });
-    }, { threshold: 0.5 });
-
-    observer.observe(document.querySelector("#anasayfa"));
+    animateHomepage();  // **Animasyonu başlat**
     
     function showSection(sectionId) {
         document.querySelectorAll('.section').forEach(section => {
