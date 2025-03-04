@@ -17,18 +17,43 @@
     <button class="menu-toggle">☰ Menü</button>
     <nav>
         <ul>
-            <li><a href="https://seyhmuserbekler.github.io/">Anasayfa</a></li>
-            <li><a href="#hakkimda">Hakkımda</a></li>
-            <li><a href="#projelerim">Eğitim Hayatım</a></li>
-            <li><a href="#blog">Yeteneklerim</a></li>
-            <li><a href="#deneyimlerim">Deneyimlerim</a></li>
-            <li><a href="#iletisim">İletişim</a></li>
+            <li><a href="#" onclick="showSection('anasayfa')">Anasayfa</a></li>
+            <li><a href="#" onclick="showSection('hakkimda')">Hakkımda</a></li>
+            <li><a href="#" onclick="showSection('projelerim')">Eğitim Hayatım</a></li>
+            <li><a href="#" onclick="showSection('blog')">Yeteneklerim</a></li>
+            <li><a href="#" onclick="showSection('deneyimlerim')">Deneyimlerim</a></li>
+            <li><a href="#" onclick="showSection('iletisim')">İletişim</a></li>
         </ul>
     </nav>
     
+    <section id="anasayfa" class="section active">
+        <h2>Anasayfa</h2>
+        <p>Hoş geldiniz! Burası ana sayfa içeriği.</p>
+    </section>
+
     <section id="hakkimda" class="section">
-        <h2 style="text-decoration: underline;">Hakkımda</h2>
-        <p>Merhaba, ben Şeyhmus...</p>
+        <h2>Hakkımda</h2>
+        <p>Ben Şeyhmus, yazılım mühendisiyim...</p>
+    </section>
+
+    <section id="projelerim" class="section">
+        <h2>Eğitim Hayatım</h2>
+        <p>Eğitim hayatımla ilgili bilgiler burada yer alacak.</p>
+    </section>
+
+    <section id="blog" class="section">
+        <h2>Yeteneklerim</h2>
+        <p>Çalıştığım programlama dilleri ve teknolojiler hakkında bilgiler.</p>
+    </section>
+
+    <section id="deneyimlerim" class="section">
+        <h2>Deneyimlerim</h2>
+        <p>Daha önce çalıştığım projeler ve işler hakkında bilgiler.</p>
+    </section>
+
+    <section id="iletisim" class="section">
+        <h2>İletişim</h2>
+        <p>Benimle iletişime geçmek için buradan ulaşabilirsiniz.</p>
     </section>
 </body>
 </html>
