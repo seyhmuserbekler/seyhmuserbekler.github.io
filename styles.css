@@ -6,6 +6,9 @@ body {
     color: #333;
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Sayfanın en az ekran yüksekliği kadar olmasını sağla */
 }
 
 header {
@@ -68,6 +71,7 @@ nav ul li a {
 .section {
     display: none;
     padding: 50px;
+    flex: 1; /* İçeriğin sayfanın tamamını kaplamasını sağlar */
 }
 
 .section.active {
@@ -77,13 +81,13 @@ nav ul li a {
 #anasayfa h1 {
     font-size: 48px; /* Başlığı büyük yap */
     font-weight: bold;
-    color: red
+    color: red;
 }
 
 #anasayfa p {
     font-size: 24px; /* Yazıları daha büyük yap */
     font-weight: 500;
-     color: green;
+    color: green;
 }
 
 h2 {
@@ -94,14 +98,11 @@ h4 {
     color: green; /* H4 başlıklarını yeşil yap */
 }
 
-
 footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: white;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    margin-top: auto; /* Footer'ı en alta sabitler */
 }
-
