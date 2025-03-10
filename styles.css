@@ -94,3 +94,14 @@ h4 {
     color: green; /* H4 başlıklarını yeşil yap */
 }
 
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
