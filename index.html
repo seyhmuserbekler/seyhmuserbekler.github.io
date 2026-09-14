@@ -1,121 +1,657 @@
+```html
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Şeyhmus Erbekler| Kişisel Web Sitesi</title>
+
+    <title>Şeyhmus Erbekler | Yazılım Mühendisi</title>
+
+    <meta name="description" content="Şeyhmus Erbekler - Yazılım Mühendisi. ASP.NET Core, C#, SQL Server, kurumsal web uygulamaları, yapay zekâ ve derin öğrenme alanlarında çalışmalar.">
+
     <link rel="stylesheet" href="styles.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <script src="script.js" defer></script>
 </head>
+
 <body>
+
     <header>
         <h1 class="anim-title">Merhaba, ben Şeyhmus Erbekler!</h1>
-        <p class="anim-subtitle">Yazılım Mühendisi & Web Geliştirici</p>
+
+        <p class="anim-subtitle">
+            Yazılım Mühendisi & Full Stack Web Developer
+        </p>
     </header>
-    
+
+
     <button class="menu-toggle">☰ Menü</button>
+
+
     <nav>
         <ul>
-            <li><a href="#" onclick="showSection('anasayfa')">Anasayfa</a></li>
-            <li><a href="#" onclick="showSection('hakkimda')">Hakkımda</a></li>
-            <li><a href="#" onclick="showSection('projelerim')">Eğitim Hayatım</a></li>
-            <li><a href="#" onclick="showSection('blog')">Yeteneklerim</a></li>
-            <li><a href="#" onclick="showSection('deneyimlerim')">Deneyimlerim</a></li>
-            <li><a href="#" onclick="showSection('iletisim')">İletişim</a></li>
+            <li>
+                <a href="#" onclick="showSection('anasayfa')">Anasayfa</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('hakkimda')">Hakkımda</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('egitim')">Eğitim Hayatım</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('yeteneklerim')">Yeteneklerim</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('deneyimlerim')">Deneyimlerim</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('iletisim')">İletişim</a>
+            </li>
         </ul>
     </nav>
-    
+
+
+
+    <!-- ANASAYFA -->
     <section id="anasayfa" class="section active">
-        <h1>Yazılım Mühendisi </h1>
-        <p>Web Developer</p>
-        <p>Web Designer</p>
-        <p>Frontend Developer</p>
-        <p>Graphic Dizayner</p>
-    </section>
 
-    <section id="hakkimda" class="section">
-        <h2 style="text-decoration: underline;">Hakkımda</h2>
-        <p>Merhabalar,daha çok üzerine çalıştığım Web tabanlı muhasebe yazılımları ,<br><br>
-        Cms uygulamaların yer aldığı kurumsal yazılım geliştirme süreçleri konusunda yazılımlar geliştirmeyi seviyorum. <br><br>
-        Şuan için Asp.net MCV5 ile yazılımlar geliştiriyorum. <br><br>
-        GitHub hesabımda bir iki küçük örnek proje paylaşmışım dilerseniz inceleyebilirsiniz .<br><br>
-    
-            Sevgiyle kalın...<br><br><br><br>
-              <a href="https://github.com/seyhmuserbekler" target="_blank">Github için tıklayınız</a>  
+        <h1>Yazılım Mühendisi</h1>
+
+        <p>Full Stack Web Developer</p>
+
+        <p>ASP.NET Core Developer</p>
+
+        <p>Kurumsal Yazılım Geliştirici</p>
+
+        <p>Yapay Zekâ & Derin Öğrenme Araştırmacısı</p>
+
+        <br>
+
+        <p>
+            Modern web teknolojileri, kurumsal yazılım çözümleri
+            ve yapay zekâ uygulamaları geliştiriyorum.
         </p>
+
     </section>
 
-    <section id="projelerim" class="section">
-        <h2 style="text-decoration: underline;">Eğitim Hayatım</h2>
+
+
+    <!-- HAKKIMDA -->
+    <section id="hakkimda" class="section">
+
+        <h2 style="text-decoration: underline;">
+            Hakkımda
+        </h2>
+
         <p>
-Şanlıurfa Özel Birikim Lisesi
-Fen-Matematik Bölümü <br>
-Matematik-Fen Sayısal<br>
-Eylül 2006- Haziran 2010 <br><br><br>
-            
-Fırat Üniversitesi
-Teknoloji Fakültesi
-Yazılım Mühendisliği <br>
-Eylül 2010-Haziran 2014  
-            
-</p>
-    </section>
+            Merhaba, ben <strong>Şeyhmus Erbekler</strong>.
+            Yazılım mühendisliği alanında özellikle web tabanlı
+            kurumsal uygulamalar, bilgi yönetim sistemleri ve
+            süreç otomasyonu üzerine çalışıyorum.
+        </p>
 
-  <section id="blog" class="section">
-    <h2 style="text-decoration: underline;">Yeteneklerim</h2>
-    <p>
-        <b> Programlama Dilleri & Araçlar</b>  <br><br>
+        <br>
 
-        <i class="fa-brands fa-cuttlefish"></i>&nbsp; C# Dili <br><br>
-        <i class="fa-brands fa-microsoft"></i> &nbsp; Asp.Net <br><br>
-        <i class="fa-brands fa-microsoft"></i> &nbsp; Asp.Net Core <br><br>
-        <i class="fa-solid fa-code"></i>&nbsp; MVC <br><br>
-        <i class="fa-solid fa-database"></i> &nbsp; SQL Server <br><br>
-        <i class="fa-solid fa-database"></i> &nbsp; Oracle
-    </p>
-</section>
-
-
-   <section id="deneyimlerim" class="section">
-        <h2 style="text-decoration: underline;">Deneyimlerim</h2>
         <p>
-<h4>Mardin Artuklu Üniversitesi</h4> 
-<b> Yazılımcı </b> <br>
-Bilgi İşlem Daire Başkanlığı - Yazılım Mühendisi <br>            
-Ocak 2025-Hala Devam <br><br><br>
-            
-<h4>Muş Alparslan Üniversitesi</h4> 
-<b> Yazılımcı </b> <br>
-Bilgi İşlem Daire Başkanlığı - Yazılım Mühendisi <br>            
-Ocak 2023-Ocak 2025 <br><br><br>
-            
-<h4> Ronya Bilişim & Yazılım </h4>
-<b> Yazılımcı </b> <br>
-Grafik Tasarım - Web Geliştirme-Reklam <br>     
-Eylül 2019-Ocak 2023 <br><br><br>
-            
-<h4>  Uğur Koleji </h4>
-<b> Eğitmen </b> <br><br>
-Robotik Kodlama - Web Geliştirme  <br>  
-Eylül 2018-Haziran 2019
-     </p>
+            Profesyonel çalışmalarımda
+            <strong>
+                C#, ASP.NET Core, ASP.NET MVC,
+                SQL Server ve TypeScript
+            </strong>
+            başta olmak üzere modern yazılım geliştirme
+            teknolojilerini kullanarak ölçeklenebilir,
+            sürdürülebilir ve kullanıcı odaklı uygulamalar
+            geliştiriyorum.
+        </p>
+
+        <br>
+
+        <p>
+            Üniversitelerin dijital dönüşüm süreçlerinde;
+            başvuru ve değerlendirme sistemleri,
+            talep ve çözüm merkezi uygulamaları,
+            randevu sistemleri, yönetim panelleri ve
+            farklı kurumsal iş süreçlerinin
+            dijitalleştirilmesine yönelik projelerde
+            görev aldım.
+        </p>
+
+        <br>
+
+        <p>
+            Yazılım geliştirme çalışmalarımın yanında
+            <strong>
+                Yapay Zekâ, Derin Öğrenme,
+                Görüntü İşleme ve Siber Güvenlik
+            </strong>
+            alanlarında akademik çalışmalar yürütüyorum.
+        </p>
+
+        <br>
+
+        <p>
+            Lisansüstü çalışmalarım kapsamında özellikle
+            <strong>
+                LSTM, BiLSTM, CNN,
+                Attention mekanizmaları ve
+                derin öğrenme tabanlı kimlik avı
+                (Phishing URL) tespit sistemleri
+            </strong>
+            üzerine araştırmalar gerçekleştiriyorum.
+        </p>
+
+        <br>
+
+        <p>
+            Yeni teknolojileri takip etmeyi,
+            gerçek problemlere sürdürülebilir
+            yazılım çözümleri üretmeyi ve
+            geliştirdiğim sistemleri sürekli
+            iyileştirmeyi önemsiyorum.
+        </p>
+
+        <br><br>
+
+        <a href="https://github.com/seyhmuserbekler"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <i class="fa-brands fa-github"></i>
+            GitHub Profilimi İnceleyin
+
+        </a>
+
     </section>
 
 
+
+    <!-- EĞİTİM -->
+    <section id="egitim" class="section">
+
+        <h2 style="text-decoration: underline;">
+            Eğitim Hayatım
+        </h2>
+
+
+        <div class="education-item">
+
+            <h3>
+                Bitlis Eren Üniversitesi
+            </h3>
+
+            <strong>
+                Bilgisayar Mühendisliği – Yüksek Lisans
+            </strong>
+
+            <p>
+                Lisansüstü Eğitim Enstitüsü
+            </p>
+
+            <p>
+                Tez Dönemi – Devam Ediyor
+            </p>
+
+            <p>
+                <strong>Araştırma Alanları:</strong>
+                Yapay Zekâ, Derin Öğrenme,
+                Siber Güvenlik, LSTM, BiLSTM
+                ve Kimlik Avı URL Tespiti
+            </p>
+
+        </div>
+
+
+        <br><br>
+
+
+        <div class="education-item">
+
+            <h3>
+                Fırat Üniversitesi
+            </h3>
+
+            <strong>
+                Teknoloji Fakültesi – Yazılım Mühendisliği
+            </strong>
+
+            <p>
+                Lisans
+            </p>
+
+            <p>
+                Eylül 2010 – Haziran 2014
+            </p>
+
+        </div>
+
+
+        <br><br>
+
+
+        <div class="education-item">
+
+            <h3>
+                Şanlıurfa Özel Birikim Lisesi
+            </h3>
+
+            <strong>
+                Fen – Matematik Bölümü
+            </strong>
+
+            <p>
+                Matematik – Fen / Sayısal
+            </p>
+
+            <p>
+                Eylül 2006 – Haziran 2010
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- YETENEKLER -->
+    <section id="yeteneklerim" class="section">
+
+        <h2 style="text-decoration: underline;">
+            Teknik Yetenekler
+        </h2>
+
+
+        <h3>
+            <i class="fa-solid fa-code"></i>
+            Backend & Web Geliştirme
+        </h3>
+
+        <p>
+            C# • ASP.NET Core • ASP.NET MVC •
+            REST API • Entity Framework Core •
+            Serenity Platform
+        </p>
+
+        <p>
+            Kurumsal web uygulamaları,
+            yönetim panelleri, servis tabanlı uygulamalar
+            ve iş süreçlerine yönelik özel yazılım
+            çözümleri geliştirme.
+        </p>
+
+
+        <br><br>
+
+
+        <h3>
+            <i class="fa-solid fa-laptop-code"></i>
+            Frontend Teknolojileri
+        </h3>
+
+        <p>
+            HTML5 • CSS3 • JavaScript •
+            TypeScript • Bootstrap •
+            Responsive Web Design
+        </p>
+
+        <p>
+            Modern, kullanıcı dostu ve
+            farklı ekran boyutlarına uyumlu
+            web arayüzleri geliştirme.
+        </p>
+
+
+        <br><br>
+
+
+        <h3>
+            <i class="fa-solid fa-database"></i>
+            Veritabanı
+        </h3>
+
+        <p>
+            Microsoft SQL Server • T-SQL • Oracle
+        </p>
+
+        <p>
+            İlişkisel veritabanı tasarımı,
+            sorgu geliştirme, stored procedure,
+            view, veri modelleme ve
+            performans odaklı veritabanı işlemleri.
+        </p>
+
+
+        <br><br>
+
+
+        <h3>
+            <i class="fa-solid fa-brain"></i>
+            Yapay Zekâ & Derin Öğrenme
+        </h3>
+
+        <p>
+            Python • TensorFlow • Keras •
+            CNN • LSTM • BiLSTM •
+            Attention • YOLO • OpenCV
+        </p>
+
+        <p>
+            Derin öğrenme modellerinin geliştirilmesi,
+            eğitilmesi ve değerlendirilmesi;
+            görüntü işleme ve siber güvenlik
+            problemlerine yapay zekâ tabanlı
+            çözümler geliştirme.
+        </p>
+
+
+        <br><br>
+
+
+        <h3>
+            <i class="fa-solid fa-diagram-project"></i>
+            Yazılım Mimarisi & Entegrasyonlar
+        </h3>
+
+        <p>
+            RESTful Services • MVC Architecture •
+            ORM • Authentication & Authorization •
+            Google OAuth • SMTP / E-posta Entegrasyonları
+        </p>
+
+        <p>
+            Güvenli ve sürdürülebilir
+            kurumsal uygulama mimarileri geliştirme
+            ve üçüncü taraf servis entegrasyonları.
+        </p>
+
+
+        <br><br>
+
+
+        <h3>
+            <i class="fa-solid fa-server"></i>
+            Sunucu & Geliştirme Araçları
+        </h3>
+
+        <p>
+            IIS • Windows Server • Git • GitHub •
+            Visual Studio • Visual Studio Code
+        </p>
+
+        <p>
+            ASP.NET uygulamalarının yayınlanması,
+            IIS yapılandırması, sunucu kurulumu,
+            versiyon kontrolü ve
+            uygulama yaşam döngüsü yönetimi.
+        </p>
+
+
+        <br><br>
+
+
+        <h3>
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            İlgi & Araştırma Alanları
+        </h3>
+
+        <p>
+            Yapay Zekâ • Derin Öğrenme •
+            Görüntü İşleme • Siber Güvenlik •
+            Phishing Detection •
+            Kurumsal Yazılım Sistemleri
+        </p>
+
+    </section>
+
+
+
+    <!-- DENEYİMLER -->
+    <section id="deneyimlerim" class="section">
+
+        <h2 style="text-decoration: underline;">
+            Profesyonel Deneyim
+        </h2>
+
+
+        <div class="experience-item">
+
+            <h3>
+                Muş Alparslan Üniversitesi
+            </h3>
+
+            <strong>
+                Yazılım Mühendisi
+            </strong>
+
+            <p>
+                Bilgi İşlem Daire Başkanlığı
+            </p>
+
+            <p>
+                Ocak 2026 – Hâlen Devam Ediyor
+            </p>
+
+            <p>
+                Üniversitenin dijital dönüşüm süreçleri kapsamında
+                kurumsal web uygulamalarının geliştirilmesi,
+                mevcut bilgi sistemlerinin iyileştirilmesi,
+                veritabanı yönetimi ve kurum içi
+                yazılım ihtiyaçlarına yönelik çözümlerin
+                geliştirilmesi.
+            </p>
+
+        </div>
+
+
+        <br><br>
+
+
+        <div class="experience-item">
+
+            <h3>
+                Mardin Artuklu Üniversitesi
+            </h3>
+
+            <strong>
+                Yazılım Mühendisi
+            </strong>
+
+            <p>
+                Bilgi İşlem Daire Başkanlığı
+            </p>
+
+            <p>
+                Ocak 2025 – Ocak 2026
+            </p>
+
+            <p>
+                Üniversite bünyesinde kullanılan
+                kurumsal bilgi sistemlerinin geliştirilmesi
+                ve iyileştirilmesi;
+                ASP.NET Core, Serenity Platform ve
+                SQL Server tabanlı web uygulamalarının
+                tasarlanması ve geliştirilmesi.
+            </p>
+
+            <p>
+                Kurumsal süreçlerin dijitalleştirilmesine yönelik
+                başvuru, değerlendirme, yönetim ve
+                otomasyon sistemlerinin geliştirilmesi.
+            </p>
+
+        </div>
+
+
+        <br><br>
+
+
+        <div class="experience-item">
+
+            <h3>
+                Muş Alparslan Üniversitesi
+            </h3>
+
+            <strong>
+                Yazılım Mühendisi
+            </strong>
+
+            <p>
+                Bilgi İşlem Daire Başkanlığı
+            </p>
+
+            <p>
+                Ocak 2023 – Ocak 2025
+            </p>
+
+            <p>
+                Üniversitenin ihtiyaçları doğrultusunda
+                web tabanlı kurumsal uygulamaların
+                geliştirilmesi, mevcut yazılım sistemlerinin
+                bakım ve iyileştirme çalışmalarının
+                yürütülmesi ve veritabanı tabanlı
+                uygulamaların geliştirilmesi.
+            </p>
+
+        </div>
+
+
+        <br><br>
+
+
+        <div class="experience-item">
+
+            <h3>
+                Ronya Bilişim & Yazılım
+            </h3>
+
+            <strong>
+                Yazılım Geliştirici
+            </strong>
+
+            <p>
+                Eylül 2019 – Ocak 2023
+            </p>
+
+            <p>
+                Web tabanlı ticari ve kurumsal
+                yazılım çözümlerinin geliştirilmesi;
+                muhasebe ve saha satış uygulamaları,
+                web projeleri ve müşteri ihtiyaçlarına
+                özel yazılım sistemlerinin
+                tasarlanması ve geliştirilmesi.
+            </p>
+
+            <p>
+                Web geliştirme çalışmalarının yanı sıra
+                grafik tasarım, kurumsal kimlik ve
+                dijital reklam çalışmalarında görev alınması.
+            </p>
+
+        </div>
+
+
+        <br><br>
+
+
+        <div class="experience-item">
+
+            <h3>
+                Uğur Koleji
+            </h3>
+
+            <strong>
+                Robotik Kodlama ve Web Geliştirme Eğitmeni
+            </strong>
+
+            <p>
+                Eylül 2018 – Haziran 2019
+            </p>
+
+            <p>
+                Öğrencilere algoritmik düşünme,
+                temel programlama, robotik kodlama
+                ve web geliştirme alanlarında
+                eğitim verilmesi ve uygulamalı
+                teknoloji çalışmalarının yürütülmesi.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- İLETİŞİM -->
     <section id="iletisim" class="section">
-    <h2 style="text-decoration: underline;">İletişim</h2>
-    <p>
-        <i class="fas fa-envelope"></i> seyhmuserbekler@artuklu.edu.tr <br><br>
-        <i class="fas fa-envelope"></i> seyhmuserbekler@gmail.com
-    </p>
-</section>
 
- <footer>
-        <p>Copyright ©2025 Şeyhmus Erbekler. Tüm Hakları Saklıdır.</p>
+        <h2 style="text-decoration: underline;">
+            İletişim
+        </h2>
+
+        <p>
+            Benimle yazılım projeleri,
+            akademik çalışmalar veya
+            profesyonel iş birlikleri için
+            iletişime geçebilirsiniz.
+        </p>
+
+        <br>
+
+
+        <p>
+
+            <i class="fas fa-envelope"></i>
+
+            <a href="mailto:seyhmuserbekler@artuklu.edu.tr">
+                seyhmuserbekler@artuklu.edu.tr
+            </a>
+
+            <br><br>
+
+
+            <i class="fas fa-envelope"></i>
+
+            <a href="mailto:seyhmuserbekler@gmail.com">
+                seyhmuserbekler@gmail.com
+            </a>
+
+            <br><br>
+
+
+            <i class="fa-brands fa-github"></i>
+
+            <a href="https://github.com/seyhmuserbekler"
+               target="_blank"
+               rel="noopener noreferrer">
+                github.com/seyhmuserbekler
+            </a>
+
+        </p>
+
+    </section>
+
+
+
+    <footer>
+
+        <p>
+            Copyright © 2026 Şeyhmus Erbekler.
+            Tüm Hakları Saklıdır.
+        </p>
+
     </footer>
-    
+
+
 </body>
 </html>
+```
